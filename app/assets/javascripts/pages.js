@@ -51,11 +51,10 @@ $(function() {
 
         });
 
-        function processData(data)
-          {
+        function processData(data) {
               var new_text = data.data.translations[0].translatedText;
               replaceSelectedText(new_text);
-          }
+        }
 
     }
 
@@ -67,5 +66,8 @@ $(function() {
       zIndex: 2003
     });
 
+    $.getJSON('/languages.json', function(data) {
+        console.log(data.data.languages);
+    });
 
 });
