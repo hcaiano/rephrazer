@@ -37,4 +37,21 @@ $(function() {
       toolbarSticky: true,
       toolbarInline: true,
     });
+
+    $('#edit').on('froalaEditor.toolbar.show', function (e, editor) {
+            var a = getSelectionText();
+            console.log(a.replace(/ /g,"%20"));
+
+            function getSelectionText() {
+                var text = "";
+                if (window.getSelection) {
+                    text = window.getSelection().toString();
+                } else if (document.selection && document.selection.type != "Control") {
+                    text = document.selection.createRange().text;
+                }
+                return text;
+            }
+    });
+
+
 });
