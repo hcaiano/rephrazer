@@ -1,7 +1,40 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700|Merriweather:400,300,300italic,400italic,700,700italic);
 
+.translation-banner {
+    background: image-url("background.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 7rem;
+
+    h1 {
+        font-family: $font-secondary;
+        color: white;
+        line-height: 1.2;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    p {
+        font-family: $font-primary;
+        color: white;
+        text-align: center;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 3.3px;
+        margin-top: 25px;
+        margin-bottom: 0;
+    }
+}
+
 .container {
     width: 800px;
+}
+
+.font-secondary {
+    font-family: $font-secondary;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h5, .h4, h5, .h5 {
@@ -31,13 +64,14 @@ h1, .h1, h2, .h2, h3, .h3, h5, .h4, h5, .h5 {
 }
 
 .translate-form {
-  * {
-    display: inline-block;
-  }
-  select {
-    width: 180px;
-    margin-right: 1.5rem;
-  }
+    * {
+        display: inline-block;
+    }
+
+    select {
+        width: 180px;
+        margin-right: 1.5rem;
+    }
 }
 
 body {
