@@ -12,17 +12,17 @@ $(function() {
     });
 
     function open_box() {
-      $(".fr-arrow").next().attr("data-toggle", "popover");
-      $(".fr-arrow").next().attr("id", "translate_bitch");
-      
-      $('#translate_bitch').popover({
-        html: true,
-        content: function() {
-          return $('#translate-content').html();
-        },
-        placement: 'bottom',
-        container: 'body'
-      });
+          $(".fr-arrow").next().attr("data-toggle", "popover");
+          $(".fr-arrow").next().attr("class", "translate_bitch");
+            
+          $('.translate_bitch').popover({
+              html: true,
+              content: function() {
+                return $('.translate-content').html();
+              },
+              placement: 'bottom',
+              container: 'body'
+          });
       
       translate_text();
     }
@@ -30,12 +30,12 @@ $(function() {
 
     function translate_text() {
       
-      
       $(document).on('click','#my_btn',function(e){
         var source = $( ".source:visible" ).val();
         var target = $( ".target:visible" ).val();
         var a = getSelectionText();
         translate(source, target, a.replace(/ /g,"%20"));
+        $(".translate_bitch").popover("hide");
       });
  
     }
