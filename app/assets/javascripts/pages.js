@@ -11,7 +11,7 @@ $(function() {
        }
     });
 
-    function open_box() {
+    function open_box() { 
           $(".fr-arrow").next().attr("data-toggle", "popover");
           $(".fr-arrow").next().attr("class", "translate_bitch");
             
