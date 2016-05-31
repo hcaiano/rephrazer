@@ -1,15 +1,46 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,300,600,700|Merriweather:400,300,300italic,400italic,700,700italic);
 
-.editor-left {
-  width: 50%;
-  height: 100px;
-  background-color: red;
-  float: left;
+.container {
+    width: 800px;
 }
 
-.editor-right {
-  width: 50%;
-  height: 100px;
-  background-color: blue;
-  float: right;
+h1, .h1, h2, .h2, h3, .h3, h5, .h4, h5, .h5 {
+    font-family: $font-primary;
+    font-weight: 700;
+    color: black;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -moz-font-feature-settings: "liga" on;
+}
+
+.fr-box {
+    height: 100vh;
+    font-family: $font-secondary;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.7;
+    letter-spacing: -.003em;
+    margin-top: 75px;
+    color: rgba(0, 0, 0, 0.7);
+
+    strong {
+        color: black;
+    }
+
+    p {
+        margin-top: 29px;
+    }
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border-top: 1px solid #E4E4E4;
 }
