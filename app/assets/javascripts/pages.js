@@ -35,6 +35,6 @@ $(function() {
     $('#edit').froalaEditor({
       toolbarButtons: ['fullscreen', 'bold', 'italic', 'underline', 'color', 'paragraphStyle', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', 'insertHR', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', 'undo', 'redo', 'clearFormatting', 'star'],
       toolbarSticky: true,
-      toolbarInline: true
+      toolbarInline: true,
     });
 });
