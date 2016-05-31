@@ -1,34 +1,5 @@
-<div>
-	<h1>Pages#index</h1>
-	<p>Find me in app/views/pages/index.html.erb</p>
-</div>
-
-<script type="text/javascript">
-
-    $('div').mouseup(function() {
-		var a = getSelectionText();
-		console.log(a.replace(/ /g,"%20"));
-    });
-
-	function getSelectionText() {
-	    var text = "";
-	    if (window.getSelection) {
-	        text = window.getSelection().toString();
-	    } else if (document.selection && document.selection.type != "Control") {
-	        text = document.selection.createRange().text;
-	    }
-	    return text;
-	}
-
-
-
-</script>
-
-
 <div class="container">
   <form>
     <textarea id="edit" name="content"></textarea>
   </form>
 </div>
-
-
