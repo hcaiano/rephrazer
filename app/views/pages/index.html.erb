@@ -2,30 +2,19 @@
   <form>
     <textarea id="edit" name="content"></textarea>
   </form>
-  <a tabindex="0" class="btn btn-lg btn-danger" id="translate_bitch" role="button" data-toggle="popover" title="Translate your content">
-    Dismissible popover
-  </a>
 </div>
+
+
+
+
 <div id="translate-content" class="hide">
   <div class="translate-form">
     <div class="popover-divider">FROM</div>
-    <select class="form-control">
-      <option>1</option>
+    <select class="form-control source" >
     </select>
     <div class="popover-divider">TO</div>
-    <select class="form-control">
-      <option>1</option>
+    <select class="form-control target" >
     </select>
-    <button type="button" class="btn btn-primary btn-sm">SUBMIT</button>
+    <a id="my_btn" type="button" class="btn btn-primary btn-sm">SUBMIT</a>
   </div>
 </div>
-<script type="text/javascript">
-  $('#translate_bitch').popover({
-    html: true,
-    content: function() {
-              return $('#translate-content').html();
-             },
-    placement: 'bottom',
-    container: 'body'
-  });
-</script>
