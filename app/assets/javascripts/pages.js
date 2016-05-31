@@ -90,7 +90,7 @@ $(function() {
     }
 
     $('#edit').froalaEditor({
-      toolbarButtons: ['translate','fullscreen', 'bold', 'italic', 'underline', 'color', 'paragraphStyle', 'paragraphFormat', 'align', 'formatOL', 'formatUL', 'outdent', 'indent', 'quote', 'insertHR', 'insertLink', 'insertImage', 'insertVideo', 'insertFile', 'insertTable', 'undo', 'redo', 'clearFormatting', 'star'],
+      toolbarButtons: ['translate', 'bold', 'italic', 'underline', 'paragraphStyle', 'formatOL', 'formatUL', 'insertHR', 'insertLink', 'insertImage', 'undo', 'redo', 'clearFormatting'],
       toolbarSticky: true,
       toolbarInline: true,
       theme: 'gray',
